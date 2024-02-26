@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6386cc;
+}
+#logoimage {
+  width: 100px;
+  height: 50px;
+  margin-right: 20px;
+}
+.navbar {
+  background-color: #061a37;
+}
+.nav-link {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar-brand {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+}
+.navbar-brand:hover {
+  color: #dc143c;
+}
+.btn {
+  margin: 5px;
+}
+
+.nav-item a:hover {
+  color: #dc143c;
+}
+#Packages {
+  background-color: #1d447f;
+}
+.dropdown-menu a :hover {
+  color: #dc143c;
+}
+.dropdown-item a {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+.dropdown-item:not(:hover) {
+  color: #fff;
+}
+.bgimg {
+  background-image: url("polynesia.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#welcomename {
+  margin-bottom: 20px;
+}
+
+#Placename {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.btn {
+    background-color: blue;
+  text-decoration: none;
+  color: #fff;
+}
+#change h1,
+h2,
+p {
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+}
+.btn {
+  transition: background-color 0.3s ease-in-out;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-toggler-icon {
+  color: #fff;
+}
+#change h1,
+h2,
+p {
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+}
+#change {
+  background-color: #ba8b93;
+}
+#change h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#textchange {
+  font-size: 30px;
+}
+#textchange:after {
+  content: "";
+  animation-name: textchangeanim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/* for text transition */
+@keyframes textchangeanim {
+  0% {
+    content: " ";
+  }
+  25% {
+    content: " United states";
+  }
+  50% {
+    content: "India";
+  }
+  75% {
+    content: "France";
+  }
+  100% {
+    content: "Germany";
+  }
+}
+
+/* image dashboard end */
+
+/* Package card start */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+}
+#package .card img {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 30px;
+  margin-right: 25px;
+  padding: 2px;
+  box-shadow: 0px 2px 5px black;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+#star {
+  color: orange;
+  margin: 10px 0px;
+}
+
+#package .card {
+  border-radius: 2%;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.package:hover {
+  box-shadow: 0 8px 16px 0 rgba(34, 94, 126, 0.2);
+}
+
+/* Package card end */
+
+/*  services card */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.service {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.service:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.service-content {
+  padding: 20px;
+  text-align: center;
+}
+.service-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.service-description {
+  margin-bottom: 10px;
+}
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#page2 {
+  display: flex;
+  padding: 20px;
+  background-color: lightblue;
+}
+#bookings {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 5px #c5c5c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 25px;
+  gap: 20px;
+}
+.brand-logo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 5px black;
+  background-color: #87cfeb93;
+  border-radius: 5px;
+}
+.brand-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(5px 5px 15px);
+  border-radius: 5px;
+}
+.booking-info {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: -1px 0px 5px black;
+  border-radius: 5px;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: #87cfeb93;
+}
+select {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: grey;
+  border-radius: 5px;
+  background-color: aqua;
+}
+.form-floating textarea {
+  height: 50px;
+}
+.form-control,
+input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: aqua;
+}
+label {
+  margin-top: 10px;
+}
+.book-btn {
+  margin-top: 30px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(206, 230, 252);
+  transition: all ease 0.5s;
+}
+.book-btn:hover {
+  box-shadow: -3px 3px black;
+}
+.form-floating {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* service card ends */
